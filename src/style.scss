@@ -9,6 +9,24 @@ html, body {
     height: 100%;
 }
 
+html {
+    background-color: #eee;
+}
+
+body {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 1250px;
+    height: 100%;
+}
+
 ul {
     list-style: none;
     @include margin-pad();
@@ -16,4 +34,38 @@ ul {
 
 li {
     @include margin-pad();
+}
+
+a, input, button {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 110px;
+    background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.3));
+}
+
+.main_menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        display: block;
+        padding-top: 10px;
+    }
+
+    a:hover {
+        border-top: 2px solid red;
+        padding-top: 8px;
+    }
 }
