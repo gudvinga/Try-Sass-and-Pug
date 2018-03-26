@@ -1,0 +1,13 @@
+- var menuMainItems = ['', 'About', 'Ingredients', 'Menu', 'Reviews', 'Reservations']
+- var menuSocialItems = ['Twitter', 'Youtube', 'Facebook']
+
+nav.main_menu
+    ul.menu
+        each val in menuMainItems
+            li
+                a(href="#" + val, title=val)= val !== '' ? val : 'Home'
+
+    ul.menu_social
+        each val in menuSocialItems
+            li
+                a(href="#" + val, title=val)= val

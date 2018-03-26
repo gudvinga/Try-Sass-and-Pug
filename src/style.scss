@@ -1,0 +1,19 @@
+@mixin margin-pad() {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+    @include margin-pad();
+}
+
+li {
+    @include margin-pad();
+}
