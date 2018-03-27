@@ -1,0 +1,22 @@
+.main_menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        display: block;
+        padding-top: 10px;
+        margin-right: 50px;
+        color: white;
+    }
+
+    a:hover {
+        border-top: 2px solid red;
+        padding-top: 8px;
+    }
+}

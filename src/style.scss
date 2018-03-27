@@ -47,25 +47,12 @@ a {
 header {
     height: 110px;
     background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.3));
-}
-
-.main_menu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
+    position: sticky;
 
     a {
-        display: block;
-        padding-top: 10px;
-    }
-
-    a:hover {
-        border-top: 2px solid red;
-        padding-top: 8px;
+        color: white;
     }
 }
+
+@import './scss/main_menu';
+@import './scss/promo';

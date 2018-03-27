@@ -1,0 +1,58 @@
+.promo {
+    background-image: url(./img/bg_promo.jpg);
+    background-color: #000;
+    height: 750px;
+    box-sizing: border-box;
+    margin-top: -110px;
+    padding-top: 110px;
+
+    h2 {
+        display: block;
+        margin: 0 auto;
+        color: white;
+        text-align: center;
+        font-size: 5.625rem;
+    }
+
+    h2:after {
+        content: '';
+        display: block;
+        margin: 0 auto;
+        background-image: url(./img/devider.png);
+        height: 43px;
+        width: 232px;
+        margin-top: 30px;
+    }
+
+    a {
+        color: white;
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+    }
+
+    %button {
+        display: block;
+        width: 230px;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        margin: 15px;
+    }
+
+    .white {
+        @extend %button;
+        background-color: rgba(255,255,255,.7);
+        border: 1px solid white;
+    }
+
+    .black {
+        @extend %button;
+        background-color: rgba(0,0,0,.8);
+        border: 1px solid black;
+    }
+}

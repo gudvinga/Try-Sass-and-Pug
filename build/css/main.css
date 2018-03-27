@@ -35,7 +35,10 @@ a {
 
 header {
   height: 110px;
-  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.3)); }
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.3));
+  position: sticky; }
+  header a {
+    color: white; }
 
 .main_menu {
   display: flex;
@@ -47,7 +50,51 @@ header {
   justify-content: space-between; }
   .menu a {
     display: block;
-    padding-top: 10px; }
+    padding-top: 10px;
+    margin-right: 50px;
+    color: white; }
   .menu a:hover {
     border-top: 2px solid red;
     padding-top: 8px; }
+
+.promo {
+  background-image: url(/img/bg_promo.jpg);
+  background-color: #000;
+  height: 750px;
+  box-sizing: border-box;
+  margin-top: -110px;
+  padding-top: 110px; }
+  .promo h2 {
+    display: block;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    font-size: 5.625rem; }
+  .promo h2:after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    background-image: url(/img/devider.png);
+    height: 43px;
+    width: 232px;
+    margin-top: 30px; }
+  .promo a {
+    color: white; }
+  .promo .links {
+    display: flex;
+    justify-content: center; }
+  .promo .white, .promo .black {
+    display: block;
+    width: 230px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin: 15px; }
+  .promo .white {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid white; }
+  .promo .black {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid black; }
