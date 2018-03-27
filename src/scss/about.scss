@@ -1,0 +1,10 @@
+.about {
+    background-image: url(./img/pattern.png);
+    height: 710px;
+    overflow: hidden;
+
+    h2:after {
+        @include devider(30px, 24px, 247px);
+        background-image: url(./img/devider_orange.png);
+    }
+}

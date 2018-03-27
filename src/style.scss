@@ -3,6 +3,17 @@
     padding: 0;
 }
 
+@mixin devider($offsetY, $height, $width) {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    height: $height;
+    width: $width;
+    margin-top: $offsetY;
+}
+
+$orange: #c9a131;
+
 html, body {
     margin: 0;
     padding: 0;
@@ -54,5 +65,42 @@ header {
     }
 }
 
+.content {
+    text-align: center;
+
+    h2 {
+        color: $orange;
+        font-size: 2.25rem;
+        margin: 0;
+    }
+}
+
 @import './scss/main_menu';
 @import './scss/promo';
+@import './scss/about';
+
+.ingredients {
+    height: 756px;
+    width: 100%;
+    background-image: url(./img/bg_ingredients.jpg)
+}
+
+.menu_list {
+    height: 756px;
+    background-image: url(./img/pattern_2.png)
+}
+
+.reviews {
+    height: 756px;
+    background-image: url(./img/bg_reviews.jpg)
+}
+
+.reservation {
+    height: 710px;
+    background-image: url(./img/pattern.png);
+}
+
+footer {
+    height: 310px;
+    background-color: #191919;
+}

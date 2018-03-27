@@ -40,6 +40,13 @@ header {
   header a {
     color: white; }
 
+.content {
+  text-align: center; }
+  .content h2 {
+    color: #c9a131;
+    font-size: 2.25rem;
+    margin: 0; }
+
 .main_menu {
   display: flex;
   justify-content: flex-end;
@@ -64,6 +71,9 @@ header {
   box-sizing: border-box;
   margin-top: -110px;
   padding-top: 110px; }
+  .promo .inner {
+    flex-direction: column;
+    justify-content: center; }
   .promo h2 {
     display: block;
     margin: 0 auto;
@@ -74,10 +84,10 @@ header {
     content: '';
     display: block;
     margin: 0 auto;
-    background-image: url(/img/devider.png);
     height: 43px;
     width: 232px;
-    margin-top: 30px; }
+    margin-top: 30px;
+    background-image: url(/img/devider.png); }
   .promo a {
     color: white; }
   .promo .links {
@@ -98,3 +108,37 @@ header {
   .promo .black {
     background-color: rgba(0, 0, 0, 0.8);
     border: 1px solid black; }
+
+.about {
+  background-image: url(/img/pattern.png);
+  height: 710px;
+  overflow: hidden; }
+  .about h2:after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    height: 24px;
+    width: 247px;
+    margin-top: 30px;
+    background-image: url(/img/devider_orange.png); }
+
+.ingredients {
+  height: 756px;
+  width: 100%;
+  background-image: url(/img/bg_ingredients.jpg); }
+
+.menu_list {
+  height: 756px;
+  background-image: url(/img/pattern_2.png); }
+
+.reviews {
+  height: 756px;
+  background-image: url(/img/bg_reviews.jpg); }
+
+.reservation {
+  height: 710px;
+  background-image: url(/img/pattern.png); }
+
+footer {
+  height: 310px;
+  background-color: #191919; }
