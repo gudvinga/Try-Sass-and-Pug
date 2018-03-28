@@ -65,7 +65,7 @@ header {
     padding-top: 8px; }
 
 .promo {
-  background-image: url(/img/bg_promo.jpg);
+  background-image: url(img/bg_promo.jpg);
   background-color: #000;
   height: 750px;
   box-sizing: border-box;
@@ -87,7 +87,7 @@ header {
     height: 43px;
     width: 232px;
     margin-top: 30px;
-    background-image: url(/img/devider.png); }
+    background-image: url(img/devider.png); }
   .promo a {
     color: white; }
   .promo .links {
@@ -110,7 +110,7 @@ header {
     border: 1px solid black; }
 
 .about {
-  background-image: url(/img/pattern.png);
+  background-image: url(img/pattern.png);
   height: 710px;
   overflow: hidden; }
   .about h2:after {
@@ -120,24 +120,24 @@ header {
     height: 24px;
     width: 247px;
     margin-top: 30px;
-    background-image: url(/img/devider_orange.png); }
+    background-image: url(img/devider_orange.png); }
 
 .ingredients {
   height: 756px;
   width: 100%;
-  background-image: url(/img/bg_ingredients.jpg); }
+  background-image: url(img/bg_ingredients.jpg); }
 
 .menu_list {
   height: 756px;
-  background-image: url(/img/pattern_2.png); }
+  background-image: url(img/pattern_2.png); }
 
 .reviews {
   height: 756px;
-  background-image: url(/img/bg_reviews.jpg); }
+  background-image: url(img/bg_reviews.jpg); }
 
 .reservation {
   height: 710px;
-  background-image: url(/img/pattern.png); }
+  background-image: url(img/pattern.png); }
 
 footer {
   height: 310px;
