@@ -11,9 +11,16 @@
     a {
         display: block;
         position: relative;
-        margin-right: 50px;
+        margin-left: 50px;
         color: white;
         @include font($gentium, 1.3125rem);
+        transition: all ease-out .2s;
+    }
+
+    a:hover {
+        //font-size: 1.6em;
+        transition: all ease-out .2s;
+        opacity: .7;
     }
 
     a:hover::after {
@@ -28,7 +35,15 @@
 
 }
 
-.social a{
-    margin-right: 5px;
-    color: $orange;
+.social {
+    a {
+        margin-left: 15px;
+        color: $orange;
+        transition: all ease-out .5s;
+    }
+
+    a:hover {
+        color: white;
+        transition: all ease-out .5s;
+    }
 }

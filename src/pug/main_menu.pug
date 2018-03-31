@@ -1,5 +1,5 @@
 - var menuMainItems = ['', 'About', 'Ingredients', 'Menu', 'Reviews', 'Reservations']
-- var menuSocialItems = ['Twitter', 'Youtube', 'Facebook']
+- var menuSocialItems = ['twitter', 'youtube', 'facebook']
 
 nav.main_menu
     ul.menu
@@ -10,4 +10,5 @@ nav.main_menu
     ul.menu.social
         each val in menuSocialItems
             li
-                a(href="#" + val, title=val)= val
+                a(href="#" + val, title=val)
+                    span(class = 'icon-' + val)

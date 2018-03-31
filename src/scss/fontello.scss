@@ -1,0 +1,36 @@
+$fontello-font-path : "./fonts";
+$fontello-font-name : "fontello";
+
+@import "~fontello-sass/fontello";
+
+.icon-youtube {
+    @include fontello('167')
+}
+
+.icon-twitter {
+    @include fontello('099')
+}
+
+.icon-facebook {
+    @include fontello('09a')
+}
+
+.icon-trello {
+    @include fontello('181')
+}
+
+.icon-visa {
+    @include fontello('1f0')
+}
+
+.icon-discover {
+    @include fontello('1f2')
+}
+
+.icon-amex {
+    @include fontello('1f3')
+}
+
+.icon-paypal {
+    @include fontello('1f4')
+}

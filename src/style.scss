@@ -1,13 +1,3 @@
-// $fontello-font-path : "./fonts";
-// $fontello-font-name : "fontello";
-
-// @import "~fontello-sass/fontello";
-
-@mixin margin-pad() {
-    margin: 0;
-    padding: 0;
-}
-
 @mixin devider($offsetY, $height, $width) {
     content: '';
     display: block;
@@ -24,11 +14,18 @@
     font-size: $size;
 }
 
+@mixin margin-pad() {
+    margin: 0;
+    padding: 0;
+}
+
 $yeseva: 'Yeseva One', cursive;
 $lato: 'Lato', sans-serif;
 $gentium: 'Gentium Book Basic', serif;
 
 $orange: #c9a131;
+
+@import './scss/fontello';
 
 html, body {
     margin: 0;
@@ -49,6 +46,10 @@ body {
 h1, h2, h3 {
     @include font($yeseva, 1rem);
     font-weight: 400;
+}
+
+p {
+    line-height: 1.5em;
 }
 
 .inner {

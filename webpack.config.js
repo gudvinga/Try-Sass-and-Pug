@@ -17,6 +17,9 @@ module.exports = merge(
         module: {
             
         },
+        devServer: {
+            stats: 'errors-only',
+        },
         plugins: [
             new HtmlWebpackPlugin({
                 template: path.join(__dirname, 'src') + '/index.pug'

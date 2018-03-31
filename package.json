@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serv": "node static",
-    "build": "webpack -w"
+    "build": "webpack -w",
+    "start": "webpack-dev-server"
   },
   "author": "gudvinga",
   "license": "ISC",
@@ -14,6 +15,7 @@
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
+    "fontello-sass": "^0.1.0",
     "html-beautify-webpack-plugin": "^1.0.4",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.1.0",
@@ -26,6 +28,7 @@
     "url-loader": "^1.0.1",
     "webpack": "^4.2.0",
     "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1",
     "webpack-merge": "^4.1.2"
   },
   "dependencies": {
