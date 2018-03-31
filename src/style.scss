@@ -1,3 +1,8 @@
+// $fontello-font-path : "./fonts";
+// $fontello-font-name : "fontello";
+
+// @import "~fontello-sass/fontello";
+
 @mixin margin-pad() {
     margin: 0;
     padding: 0;
@@ -12,6 +17,17 @@
     margin-top: $offsetY;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:700|Lato|Yeseva+One');
+
+@mixin font($font-fam, $size) {
+    font-family: $font-fam;
+    font-size: $size;
+}
+
+$yeseva: 'Yeseva One', cursive;
+$lato: 'Lato', sans-serif;
+$gentium: 'Gentium Book Basic', serif;
+
 $orange: #c9a131;
 
 html, body {
@@ -22,6 +38,7 @@ html, body {
 
 html {
     background-color: #eee;
+    @include font($lato, 1rem);
 }
 
 body {
@@ -29,11 +46,18 @@ body {
     margin: 0 auto;
 }
 
+h1, h2, h3 {
+    @include font($yeseva, 1rem);
+    font-weight: 400;
+}
+
 .inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 40px;
     width: 1250px;
     height: 100%;
 }
@@ -63,6 +87,12 @@ header {
     a {
         color: white;
     }
+
+    .main_logo {
+        margin-left: -40px;
+        font-size: 2.25rem;
+        text-transform: uppercase;
+    }
 }
 
 .content {
@@ -73,17 +103,23 @@ header {
         font-size: 2.25rem;
         margin: 0;
     }
+
+
+    h2:after {
+        @include devider(15px, 24px, 247px);
+        background-image: url(./img/devider_orange.png);
+    }
+}
+
+.round {
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 @import './scss/main_menu';
 @import './scss/promo';
 @import './scss/about';
-
-.ingredients {
-    height: 756px;
-    width: 100%;
-    background-image: url(./img/bg_ingredients.jpg)
-}
+@import './scss/ingridients';
 
 .menu_list {
     height: 756px;

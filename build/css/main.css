@@ -1,20 +1,29 @@
-html, body {
+@import url(https://fonts.googleapis.com/css?family=Gentium+Book+Basic:700|Lato|Yeseva+One);html, body {
   margin: 0;
   padding: 0;
   height: 100%; }
 
 html {
-  background-color: #eee; }
+  background-color: #eee;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem; }
 
 body {
   width: 1600px;
   margin: 0 auto; }
+
+h1, h2, h3 {
+  font-family: "Yeseva One", cursive;
+  font-size: 1rem;
+  font-weight: 400; }
 
 .inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 40px;
   width: 1250px;
   height: 100%; }
 
@@ -39,6 +48,10 @@ header {
   position: sticky; }
   header a {
     color: white; }
+  header .main_logo {
+    margin-left: -40px;
+    font-size: 2.25rem;
+    text-transform: uppercase; }
 
 .content {
   text-align: center; }
@@ -46,6 +59,18 @@ header {
     color: #c9a131;
     font-size: 2.25rem;
     margin: 0; }
+  .content h2:after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    height: 24px;
+    width: 247px;
+    margin-top: 15px;
+    background-image: url(/img/devider_orange.png); }
+
+.round {
+  border-radius: 50%;
+  overflow: hidden; }
 
 .main_menu {
   display: flex;
@@ -57,15 +82,26 @@ header {
   justify-content: space-between; }
   .menu a {
     display: block;
-    padding-top: 10px;
+    position: relative;
     margin-right: 50px;
-    color: white; }
-  .menu a:hover {
-    border-top: 2px solid red;
-    padding-top: 8px; }
+    color: white;
+    font-family: "Gentium Book Basic", serif;
+    font-size: 1.3125rem; }
+  .menu a:hover::after {
+    content: '';
+    display: block;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: -43px;
+    height: 3px;
+    width: 100%; }
+
+.social a {
+  margin-right: 5px;
+  color: #c9a131; }
 
 .promo {
-  background-image: url(img/bg_promo.jpg);
+  background-image: url(/img/bg_promo.jpg);
   background-color: #000;
   height: 750px;
   box-sizing: border-box;
@@ -87,7 +123,7 @@ header {
     height: 43px;
     width: 232px;
     margin-top: 30px;
-    background-image: url(img/devider.png); }
+    background-image: url(/img/devider.png); }
   .promo a {
     color: white; }
   .promo .links {
@@ -110,34 +146,45 @@ header {
     border: 1px solid black; }
 
 .about {
-  background-image: url(img/pattern.png);
+  background-image: url(/img/pattern.png);
   height: 710px;
   overflow: hidden; }
-  .about h2:after {
-    content: '';
-    display: block;
-    margin: 0 auto;
-    height: 24px;
-    width: 247px;
-    margin-top: 30px;
-    background-image: url(img/devider_orange.png); }
 
 .ingredients {
   height: 756px;
   width: 100%;
-  background-image: url(img/bg_ingredients.jpg); }
+  background-image: url(/img/bg_ingredients.jpg);
+  box-sizing: border-box;
+  padding: 100px 0; }
+  .ingredients .inner {
+    justify-content: flex-end; }
+  .ingredients h2 {
+    color: white; }
+  .ingredients h2::after {
+    background-image: url(/img/devider_white.png); }
+  .ingredients .content {
+    position: relative;
+    width: 570px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.67);
+    box-sizing: border-box;
+    padding: 70px;
+    color: white; }
+  .ingredients img.round {
+    border: 5px solid rgba(255, 255, 255, 0.09);
+    margin: 0 15px; }
 
 .menu_list {
   height: 756px;
-  background-image: url(img/pattern_2.png); }
+  background-image: url(/img/pattern_2.png); }
 
 .reviews {
   height: 756px;
-  background-image: url(img/bg_reviews.jpg); }
+  background-image: url(/img/bg_reviews.jpg); }
 
 .reservation {
   height: 710px;
-  background-image: url(img/pattern.png); }
+  background-image: url(/img/pattern.png); }
 
 footer {
   height: 310px;
