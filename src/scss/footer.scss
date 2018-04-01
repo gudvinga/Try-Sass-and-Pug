@@ -4,6 +4,9 @@ footer {
     color: white;
     box-sizing: border-box;
     padding: 55px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 
     .inner {
         align-items: flex-start;

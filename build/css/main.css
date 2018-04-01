@@ -219,17 +219,22 @@
 
 html, body {
   margin: 0;
-  padding: 0;
-  height: 100%; }
+  padding: 0; }
 
 html {
+  height: 100%;
   background-color: #b0b0b0;
   font-family: "Lato", sans-serif;
   font-size: 1rem; }
 
 body {
   width: 1600px;
-  margin: 0 auto; }
+  min-height: 100%;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 310px; }
 
 h1, h2, h3 {
   font-family: "Yeseva One", cursive;
@@ -264,13 +269,13 @@ a, input, button {
 a {
   text-decoration: none; }
 
-.content {
+.content, .column {
   text-align: center; }
-  .content h2 {
+  .content h2, .column h2 {
     color: #c9a131;
     font-size: 2.25rem;
     margin: 0; }
-  .content h2:after {
+  .content h2:after, .column h2:after {
     content: '';
     display: block;
     margin: 0 auto;
@@ -286,7 +291,6 @@ a {
 header {
   height: 110px;
   background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5));
-  position: sticky;
   overflow: hidden; }
   header .inner {
     margin-top: 5px; }
@@ -418,9 +422,36 @@ header {
     margin: 60px 15px; }
 
 .menu_list {
-  height: 756px;
+  height: 995px;
   background-image: url(/img/pattern_2.png);
-  background-color: white; }
+  background-color: white;
+  overflow: hidden; }
+  .menu_list .inner {
+    align-items: flex-start;
+    padding: 100px 40px; }
+  .menu_list .item {
+    display: flex;
+    justify-content: space-between;
+    color: #c9a131;
+    font-family: "Yeseva One", cursive;
+    font-size: 1.3125rem;
+    border-bottom: 1px solid #c9a131;
+    margin: 30px 0 10px 0;
+    padding-bottom: 10px; }
+  .menu_list .composition {
+    font-family: "Lato", sans-serif;
+    color: #4c4c4c; }
+  .menu_list .column {
+    flex-basis: 570px;
+    box-sizing: border-box;
+    padding: 0 70px;
+    text-align: left; }
+    .menu_list .column h2 {
+      text-align: center; }
+    .menu_list .column .dishes_list {
+      margin-top: 70px; }
+    .menu_list .column .dishes_list:first-child {
+      margin-top: 0; }
 
 .reviews {
   height: 756px;
@@ -454,13 +485,76 @@ header {
   height: 710px;
   background-image: url(/img/pattern.png);
   background-color: white; }
+  .reservation .inner {
+    padding: 100px 40px;
+    align-items: flex-start; }
+    .reservation .inner > div {
+      flex-basis: 50%; }
+    .reservation .inner > div:first-child {
+      margin-right: 30px; }
+    .reservation .inner .image {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+    .reservation .inner .content {
+      box-sizing: border-box;
+      padding: 0 70px;
+      color: #4c4c4c; }
+    .reservation .inner .reservation_form {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .reservation .inner .reservation_form label {
+        display: block;
+        text-align: left;
+        flex-basis: 46%;
+        color: #c9a131;
+        margin-top: 30px;
+        font-size: 14px;
+        font-weight: 700; }
+      .reservation .inner .reservation_form input {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        height: 36px;
+        padding: 0 15px;
+        line-height: 36px;
+        margin-top: 10px;
+        border: 1px solid;
+        border-color: #c6c6c6;
+        font-size: 1em;
+        font-style: italic; }
+      .reservation .inner .reservation_form input:focus {
+        border-color: #c9a131; }
+      .reservation .inner .reservation_form button {
+        margin: 30px auto;
+        text-align: center;
+        width: 200px;
+        height: 37px;
+        box-sizing: border-box;
+        line-height: 37px;
+        background-color: #c9a131;
+        color: white;
+        border: none;
+        font-size: 1em;
+        cursor: pointer;
+        transition: all ease .5s; }
+      .reservation .inner .reservation_form button:hover {
+        background-color: white;
+        color: #c9a131;
+        transition: all ease .5s;
+        border: 1px solid #c9a131; }
 
 footer {
   height: 310px;
   background-color: #191919;
   color: white;
   box-sizing: border-box;
-  padding: 55px 0; }
+  padding: 55px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
   footer .inner {
     align-items: flex-start;
     position: relative; }

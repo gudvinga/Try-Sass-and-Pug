@@ -8,52 +8,10 @@ html(lang="en")
         include ./pug/header.pug
         include ./pug/promo.pug
         include ./pug/about.pug
-        
-        section.ingredients
-            .inner
-                .content
-                    h2.
-                        Fine ingredients
-                    p.
-                        If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!
-                    img(src=require("./img/ingridient_1.jpg"), alt="ingredient").round
-                    img(src=require("./img/ingridient_2.jpg"), alt="ingredient").round
-                    img(src=require("./img/ingridient_3.jpg"), alt="ingredient").round
-
-        section.menu_list
-            .inner
-                .content
-
-        section.reviews
-            .inner
-                .content
-                    h2.
-                        Guest Reviews
-                    p.
-                        If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!
-                    span.caption
-                        | - food inc, New York
-
-
-        section.reservation
-            .inner
-                .content
-                    h2.
-                        Just the right food
-                    p.
-                        If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food.
-                        Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.
-
-                    form(action="#")
-                        label(for="")
-                            input(type="text", value="")
-                        label(for="")
-                            input(type="text", value="")
-                        label(for="")
-                            input(type="text", value="")
-                        label(for="")
-                            input(type="text", value="")
-        
+        include ./pug/ingridients.pug
+        include ./pug/menu_list.pug
+        include ./pug/reviews.pug
+        include ./pug/reservation.pug
         include ./pug/footer.pug
         
 

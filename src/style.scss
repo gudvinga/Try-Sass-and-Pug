@@ -30,17 +30,22 @@ $orange: #c9a131;
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
 }
 
 html {
+    height: 100%;
     background-color: rgb(176, 176, 176);
     @include font($lato, 1rem);
 }
 
 body {
     width: 1600px;
+    min-height: 100%;
+    box-sizing: border-box;
+    height: auto;
     margin: 0 auto;
+    position: relative;
+    padding-bottom: 310px;
 }
 
 h1, h2, h3 {
@@ -80,7 +85,7 @@ a {
     text-decoration: none;
 }
 
-.content {
+.content, .column {
     text-align: center;
 
     h2 {

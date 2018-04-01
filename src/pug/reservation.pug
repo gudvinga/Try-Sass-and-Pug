@@ -1,0 +1,27 @@
+section.reservation#Reservations
+    .inner
+        .image 
+            img(src=require("../img/reservation_1.jpg"), alt="reservation_1")
+            img(src=require("../img/reservation_2.jpg"), alt="reservation_2")
+        .content
+            h2.
+                Just the right food
+            p.
+                If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food.
+                Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.
+
+            form(action="#").reservation_form
+                label(for="")
+                    | Name
+                    input(type="text", value="" placeholder="your name*" required)                     
+                label(for="")
+                    | Email
+                    input(type="text", value="" placeholder="your email*" required)
+                label(for="")
+                    | Date
+                    input(type="date", value="" placeholder="date*" required)
+                label(for="")
+                    | Party Number
+                    input(type="text", value="" placeholder="party number*" required)
+                button(type="submit")
+                    | Book now!
