@@ -34,7 +34,7 @@ html, body {
 }
 
 html {
-    background-color: #eee;
+    background-color: rgb(176, 176, 176);
     @include font($lato, 1rem);
 }
 
@@ -80,22 +80,6 @@ a {
     text-decoration: none;
 }
 
-header {
-    height: 110px;
-    background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.3));
-    position: sticky;
-
-    a {
-        color: white;
-    }
-
-    .main_logo {
-        margin-left: -40px;
-        font-size: 2.25rem;
-        text-transform: uppercase;
-    }
-}
-
 .content {
     text-align: center;
 
@@ -117,27 +101,12 @@ header {
     overflow: hidden;
 }
 
+@import './scss/header';
 @import './scss/main_menu';
 @import './scss/promo';
 @import './scss/about';
-@import './scss/ingridients';
-
-.menu_list {
-    height: 756px;
-    background-image: url(./img/pattern_2.png)
-}
-
-.reviews {
-    height: 756px;
-    background-image: url(./img/bg_reviews.jpg)
-}
-
-.reservation {
-    height: 710px;
-    background-image: url(./img/pattern.png);
-}
-
-footer {
-    height: 310px;
-    background-color: #191919;
-}
+@import './scss/ingredients';
+@import './scss/menu_list';
+@import './scss/reviews';
+@import './scss/reservation';
+@import './scss/footer';

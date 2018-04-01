@@ -1,0 +1,38 @@
+.reviews {
+    height: 756px;
+    background-image: url(./img/bg_reviews.jpg);
+    background-color: white;
+    box-sizing: border-box;
+    padding: 100px 0;
+
+    .content {
+        position: relative;
+        background-color: rgba(0,0,0,.8);
+        width: 770px;
+        height: 100%;
+        color: #dde0df;
+        font-family: $gentium;
+        font-size: 1.5625rem;
+        line-height: 1.8em;
+        box-sizing: border-box;
+        padding: 80px 70px;
+        margin: 0 auto;
+
+        h2 {
+            color: #dde0df;
+        }
+
+        h2::after {
+            background-image: url(./img/devider_white.png)
+        }
+
+        p {
+            line-height: 1.8em;
+        }
+
+        .caption {
+            font-family: $lato;
+            font-size: 1.125rem;
+        }
+    }
+}

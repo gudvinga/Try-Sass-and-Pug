@@ -18,10 +18,12 @@
         color: white;
         text-align: center;
         font-size: 5.625rem;
+        line-height: 1.3em;
+        //margin-top: -40px;
     }
 
     h2:after {
-        @include devider(30px, 43px, 232px);
+        @include devider(25px, 43px, 232px);
         background-image: url(./img/devider.png);
     }
 
@@ -42,12 +44,16 @@
         text-align: center;
         color: white;
         text-transform: uppercase;
-        margin: 15px;
+        margin: 40px 15px;
+    }
+
+    %button:hover {
+        background-color: $orange;
     }
 
     .white {
         @extend %button;
-        background-color: rgba(255,255,255,.7);
+        background-color: rgba(255,255,255,.28);
         border: 1px solid white;
     }
 

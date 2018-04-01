@@ -223,7 +223,7 @@ html, body {
   height: 100%; }
 
 html {
-  background-color: #eee;
+  background-color: #b0b0b0;
   font-family: "Lato", sans-serif;
   font-size: 1rem; }
 
@@ -264,17 +264,6 @@ a, input, button {
 a {
   text-decoration: none; }
 
-header {
-  height: 110px;
-  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.3));
-  position: sticky; }
-  header a {
-    color: white; }
-  header .main_logo {
-    margin-left: -40px;
-    font-size: 2.25rem;
-    text-transform: uppercase; }
-
 .content {
   text-align: center; }
   .content h2 {
@@ -294,14 +283,31 @@ header {
   border-radius: 50%;
   overflow: hidden; }
 
+header {
+  height: 110px;
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5));
+  position: sticky;
+  overflow: hidden; }
+  header .inner {
+    margin-top: 5px; }
+  header a {
+    color: white;
+    font-weight: 400; }
+  header .main_logo {
+    margin-left: -40px;
+    font-size: 2.25rem;
+    text-transform: uppercase; }
+
 .main_menu {
   display: flex;
   justify-content: flex-end;
-  align-items: center; }
+  align-items: center;
+  margin-right: -5px; }
 
 .menu {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-left: 10px; }
   .menu a {
     display: block;
     position: relative;
@@ -318,12 +324,12 @@ header {
     display: block;
     background-color: rgba(255, 255, 255, 0.7);
     position: absolute;
-    top: -43px;
+    top: -48px;
     height: 3px;
     width: 100%; }
 
 .social a {
-  margin-left: 15px;
+  margin-left: 10px;
   color: #c9a131;
   transition: all ease-out .5s; }
 
@@ -346,14 +352,15 @@ header {
     margin: 0 auto;
     color: white;
     text-align: center;
-    font-size: 5.625rem; }
+    font-size: 5.625rem;
+    line-height: 1.3em; }
   .promo h2:after {
     content: '';
     display: block;
     margin: 0 auto;
     height: 43px;
     width: 232px;
-    margin-top: 30px;
+    margin-top: 25px;
     background-image: url(/img/devider.png); }
   .promo a {
     color: white; }
@@ -368,9 +375,11 @@ header {
     text-align: center;
     color: white;
     text-transform: uppercase;
-    margin: 15px; }
+    margin: 40px 15px; }
+  .promo .white:hover, .promo .black:hover {
+    background-color: #c9a131; }
   .promo .white {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.28);
     border: 1px solid white; }
   .promo .black {
     background-color: rgba(0, 0, 0, 0.8);
@@ -378,6 +387,7 @@ header {
 
 .about {
   background-image: url(/img/pattern.png);
+  background-color: white;
   height: 710px;
   overflow: hidden; }
 
@@ -409,16 +419,81 @@ header {
 
 .menu_list {
   height: 756px;
-  background-image: url(/img/pattern_2.png); }
+  background-image: url(/img/pattern_2.png);
+  background-color: white; }
 
 .reviews {
   height: 756px;
-  background-image: url(/img/bg_reviews.jpg); }
+  background-image: url(/img/bg_reviews.jpg);
+  background-color: white;
+  box-sizing: border-box;
+  padding: 100px 0; }
+  .reviews .content {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 770px;
+    height: 100%;
+    color: #dde0df;
+    font-family: "Gentium Book Basic", serif;
+    font-size: 1.5625rem;
+    line-height: 1.8em;
+    box-sizing: border-box;
+    padding: 80px 70px;
+    margin: 0 auto; }
+    .reviews .content h2 {
+      color: #dde0df; }
+    .reviews .content h2::after {
+      background-image: url(/img/devider_white.png); }
+    .reviews .content p {
+      line-height: 1.8em; }
+    .reviews .content .caption {
+      font-family: "Lato", sans-serif;
+      font-size: 1.125rem; }
 
 .reservation {
   height: 710px;
-  background-image: url(/img/pattern.png); }
+  background-image: url(/img/pattern.png);
+  background-color: white; }
 
 footer {
   height: 310px;
-  background-color: #191919; }
+  background-color: #191919;
+  color: white;
+  box-sizing: border-box;
+  padding: 55px 0; }
+  footer .inner {
+    align-items: flex-start;
+    position: relative; }
+    footer .inner h3 {
+      font-size: 1.3125rem;
+      margin: 0; }
+    footer .inner h3::after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      height: 19px;
+      width: 199px;
+      margin-top: 15px;
+      background-image: url(/img/devider_white_small.png); }
+    footer .inner .column {
+      text-align: center;
+      margin: 0 15px;
+      flex-basis: 3333.33333%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+    footer .inner div:first-child {
+      margin-left: 0; }
+    footer .inner div:last-child {
+      margin-right: 0; }
+    footer .inner p {
+      margin-top: 20px; }
+    footer .inner a {
+      color: white;
+      transition: all ease-out .5s; }
+    footer .inner a:hover {
+      color: #c9a131;
+      transition: all ease-out .3s; }
+    footer .inner .icons span {
+      margin: 0 6px; }
