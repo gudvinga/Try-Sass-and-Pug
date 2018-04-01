@@ -43,4 +43,29 @@
             margin-top: 0;
         }
     }
+
+    .dish{
+        position: relative;
+    }
+
+    .special:before {
+        content: "Special";
+        position: absolute;
+        background-color: $orange;
+        color: white;
+        font-size: 14px;
+        right: -10px;
+        top: -28px;
+        padding: 2px 15px;
+    }
+
+    .special:after {
+        content:'';
+        width: 455px;
+        height: 80px;
+        border: 1px solid $orange;
+        position: absolute;
+        right: -10px;
+        top: -8px;
+    }
 }

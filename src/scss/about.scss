@@ -3,4 +3,29 @@
     background-color: white;
     height: 710px;
     overflow: hidden;
+
+    .inner {
+        padding: 100px 40px;
+        align-items: flex-start;
+
+        .image {
+            margin-top: -40px;
+        }
+
+        .content {
+            color: #4c4c4c;
+            padding: 0 70px;
+            margin-right: -20px;
+
+            p {
+                margin-top: 25px;
+                color: #4c4c4c;
+            }
+
+            img {
+                margin-top: 35px;
+                padding-left: 75px;
+            }
+        }
+    }
 }

@@ -30,6 +30,17 @@
             line-height: 1.8em;
         }
 
+        p:before {
+            content: '“';
+            font-size: 96px;
+            color: #f2f4f4;
+            display: block;
+            position: absolute;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            opacity: .47;
+            left: 30px;
+        }
+
         .caption {
             font-family: $lato;
             font-size: 1.125rem;

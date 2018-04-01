@@ -394,6 +394,21 @@ header {
   background-color: white;
   height: 710px;
   overflow: hidden; }
+  .about .inner {
+    padding: 100px 40px;
+    align-items: flex-start; }
+    .about .inner .image {
+      margin-top: -40px; }
+    .about .inner .content {
+      color: #4c4c4c;
+      padding: 0 70px;
+      margin-right: -20px; }
+      .about .inner .content p {
+        margin-top: 25px;
+        color: #4c4c4c; }
+      .about .inner .content img {
+        margin-top: 35px;
+        padding-left: 75px; }
 
 .ingredients {
   height: 756px;
@@ -452,6 +467,25 @@ header {
       margin-top: 70px; }
     .menu_list .column .dishes_list:first-child {
       margin-top: 0; }
+  .menu_list .dish {
+    position: relative; }
+  .menu_list .special:before {
+    content: "Special";
+    position: absolute;
+    background-color: #c9a131;
+    color: white;
+    font-size: 14px;
+    right: -10px;
+    top: -28px;
+    padding: 2px 15px; }
+  .menu_list .special:after {
+    content: '';
+    width: 455px;
+    height: 80px;
+    border: 1px solid #c9a131;
+    position: absolute;
+    right: -10px;
+    top: -8px; }
 
 .reviews {
   height: 756px;
@@ -477,6 +511,15 @@ header {
       background-image: url(/img/devider_white.png); }
     .reviews .content p {
       line-height: 1.8em; }
+    .reviews .content p:before {
+      content: '\201C';
+      font-size: 96px;
+      color: #f2f4f4;
+      display: block;
+      position: absolute;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      opacity: .47;
+      left: 30px; }
     .reviews .content .caption {
       font-family: "Lato", sans-serif;
       font-size: 1.125rem; }
