@@ -22,7 +22,7 @@ module.exports = merge(
         },
         plugins: [
             new HtmlWebpackPlugin({
-                template: path.join(__dirname, 'src') + '/index.pug'
+                template: path.join(__dirname, '/src') + '/index.pug'
             }),
             //new HtmlBeautifyPlugin()
         ]
